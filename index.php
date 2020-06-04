@@ -215,7 +215,6 @@ $total = count($members);
             <tr>
               <th>HNGID</th>
               <th>Name</th>
-              <th>Email</th>
               <th>Message</th>
               <th>Status</th>
             </tr>
