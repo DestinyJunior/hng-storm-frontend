@@ -35,6 +35,15 @@ h1 {
   justify-content: space-between;
 }
 
+.leads-container div p:nth-of-type(1) {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.leads-container div p:nth-of-type(2) {
+  font-weight: lighter;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -107,6 +116,7 @@ section {
 
 .graphics-cards-container div p:nth-of-type(2) {
   font-size: 2rem;
+  font-weight: lighter;
 }
 
 .card-one {
