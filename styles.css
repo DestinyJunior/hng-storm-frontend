@@ -25,6 +25,7 @@ h1 {
   text-transform: uppercase;
   font-size: 1.7rem;
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.07em;
 }
 
 .leads-container {
