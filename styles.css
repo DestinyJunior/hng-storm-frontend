@@ -97,6 +97,7 @@ section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .graphics-cards-container div {
@@ -131,13 +132,18 @@ section {
   background-color: #FF6565;
 }
 
+.table--container {
+  overflow-x: auto;
+}
+
 table {
   width: 100%;
+  /* min-width: 600px; */
   background-color: white;
   border-radius: 10px;
   text-align: left;
   padding: 20px 40px;
-  overflow: auto;
+  /* overflow-x: auto; */
 }
 
 
@@ -201,9 +207,23 @@ table th, table td {
   .leads-container {
     padding: 0 10%;
     width: 100%;
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    display: block;
+    padding-top: 10px;
+  }
+  h1 {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  table {
+    overflow: auto;
   }
 }
 
