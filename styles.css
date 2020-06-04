@@ -248,5 +248,31 @@ table th, table td {
   }
 }
 
+.pager::before {
+  content: 'Jump To: ';
+  padding-top: 5px;
+  margin-right: 10px;
+}
 
+.pager {
+  margin-top: 20px;
+  display: flex;
+  width: 200px;
+}
+
+.pager-item {
+  padding: 5px 12px;
+  color: black;
+  cursor: pointer;
+}
+
+.inactive {
+  display: none;
+}
+
+.selected {
+  background-color: #df7120;
+  color: white;
+  border-radius: 10px;
+}
 
