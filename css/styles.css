@@ -276,3 +276,14 @@ table th, table td {
   border-radius: 10px;
 }
 
+#input {
+  background-image: url('/assets/icons8-search-26.png'); 
+  background-position: 8px 8px; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
