@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+header {
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  width: 250px;
+  text-align: center;
+  color:#50c4ff;
+  text-transform: uppercase;
+}
+
+.leads-container {
+  width: 600px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 32%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'aside main';
+}
+
+aside {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside h3 {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+aside button {
+  background-color: #50c4ff;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 4px;
+}
+
+section {
+  padding: 50px;
+  background-color: #f5efcf;
+}
+
+.graphics-cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.graphics-cards-container div {
+  flex-grow: 1;
+  height: 120px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  padding-top: 30px;
+}
+
+.graphics-cards-container div p {
+  margin-bottom: 14px;
+  
+}
+
+.graphics-cards-container div p:nth-of-type(2) {
+  font-size: 2rem;
+}
+
+.card-one {
+  background-color: blue;
+}
+
+.card-two {
+  background-color: green;
+}
+
+.card-three {
+  background-color: red;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px 40px;
+}
+
+
+
