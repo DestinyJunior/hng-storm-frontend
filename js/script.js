@@ -17,7 +17,6 @@ function loadTable(table) {
     if (table.querySelector('th'))
         startIndex = 1;
 
-	console.log(startIndex);
 
     var start = (parseInt(table.dataset.currentpage) * table.dataset.pagecount) + startIndex;
     var end = start + parseInt(table.dataset.pagecount);
@@ -74,9 +73,46 @@ function createFooters(table) {
         });
         pager.appendChild(page);
     }
-    console.log(pager)
+
     // insert page at the top of the table
-    table.parentNode.insertBefore(pager, document.querySelector('#insert'));
+    table.parentNode.insertBefore(pager, document.querySelector('#insert'));  
+}
+
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  var table = document.querySelector("#table");
+  input = document.getElementById("input");
+  filter = input.value.toUpperCase();
+  if (filter) {
+    var rows = table.rows;
+    for (var x = 0; x < rows.length; x++) {
+      rows[x].classList.remove("inactive");
+    }
+    const paginator = document.querySelector('.pager')
+    if (!!paginator === true) {
+      paginator.remove();
+    }
+  } else {
+    genTables()
+  }
+
+  table = document.getElementById("table");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
 }
 
 window.addEventListener('load', function() {

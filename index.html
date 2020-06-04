@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
@@ -61,8 +61,9 @@
           </div>
         </div>
       </div>
+      <input type="text" id="input" onkeyup="myFunction()" placeholder="Search for names..">
       <div class='table-container'>
-        <table class="pagination" data-pagecount="4">
+        <table class="pagination" data-pagecount="4" id="table">
           <thead>
             <tr>
               <th>S/N</th>
@@ -85,7 +86,7 @@
             <tr>
               <td>2</td>
               <td>12334455</td>
-              <td>Adedeji Abiola</td>
+              <td>Test Search</td>
               <td>Dejiabiola@yahoo.com</td>
               <td>Hello World</td>
               <td><div class='pass'>Pass</div></td>
@@ -133,7 +134,7 @@
             <tr>
               <td>8</td>
               <td>12334455</td>
-              <td>Adedeji Abiola</td>
+              <td>Test Search</td>
               <td>Dejiabiola@yahoo.com</td>
               <td>Hello World</td>
               <td><div class='fail'>Fail</div></td>
@@ -144,6 +145,6 @@
       </div>
     </section>
   </main>
-  <script src="script.js"></script> 
+  <script src="js/script.js"></script> 
 </body>
 </html>
