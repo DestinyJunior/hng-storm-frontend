@@ -107,7 +107,31 @@ section {
   padding: 20px;
   color: white;
   padding-top: 30px;
+  position: relative;
+  overflow: hidden;
 }
+
+#foo{
+  height:150px;
+  width:150px;
+  background:white;
+  position:absolute;
+  left:70%;
+  top:5%;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+  
+  #bar{
+    height:140px;
+    width:140px;
+    background: white;
+    border-radius:50%;
+    position:absolute;
+    left:60%;
+    top:20%;
+    opacity: 0.2;
+  }
 
 .graphics-cards-container div p {
   margin-bottom: 14px;
