@@ -111,4 +111,27 @@ table {
 }
 
 
+table th, table td {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+
+
+.pass {
+  background-color: green;
+  color: white;
+  padding: 4px;
+}
+
+.fail {
+  background-color: red;
+  color: white;
+  padding: 4px;
+}
+
+
 
